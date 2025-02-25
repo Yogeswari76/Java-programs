@@ -13,3 +13,17 @@ public class Sample {
     }
 }
 }
+
+Input:
+
+n = 4
+
+Expected output:
+
+*
+
+**
+
+***
+
+****
