@@ -1,0 +1,25 @@
+public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int L=sc.nextInt();
+        int R=sc.nextInt();
+        int sum=0;
+        int a[]=new int[R+1];
+        for(int i=2;i<=R;i++){
+            a[i]=0;
+        }
+        for(int i=2;i<=Math.sqrt(R);i++){
+            if(a[i]==0){
+                for(int j=2*i;j<=R;j=j+i){
+                   a[j]=1;
+                }
+            }
+        }	
+        for(int i=L;i<=R;i++){
+            if(a[i]==0){
+                sum=sum+i;
+            }
+
+      }
+      System.out.println(sum);
+        
+    }
